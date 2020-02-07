@@ -24,3 +24,19 @@ potato
  ~/external/AWKandSEDexamples   master 
 
 
+
+
+ ~/external/AWKandSEDexamples   master  echo "Regular expressions in AWK" 
+Regular expressions in AWK
+ ~/external/AWKandSEDexamples   master  awk '$2 ~ /b.+n/ {print $0}' colours.txt
+kiwi       brown  4
+potato     brown  9
+ ~/external/AWKandSEDexamples   master  awk '$2 ~ /b.+n/ {print $1}' colours.txt
+kiwi
+potato
+ ~/external/AWKandSEDexamples   master  awk '$2 ~ /b.+n/ {print $3}' colours.txt
+4
+9
+ ~/external/AWKandSEDexamples   master 
+
+
