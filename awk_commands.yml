@@ -1,0 +1,4 @@
+awk '{print $2;}' colours.txt
+awk '{print $2}' colours.txt
+
+
