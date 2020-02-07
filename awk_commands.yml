@@ -2,3 +2,25 @@ awk '{print $2;}' colours.txt
 awk '{print $2}' colours.txt
 
 
+
+ ~/external/AWKandSEDexamples   master  cat colours.txt
+name       color  amount
+apple      red    4
+banana     yellow 6
+strawberry red    3
+grape      purple 10
+apple      green  8
+plum       purple 2
+kiwi       brown  4
+potato     brown  9
+pineapple  yellow 5
+
+ ~/external/AWKandSEDexamples   master  awk '$2 == "brown" {print $3}' colours.txt
+4
+9
+ ~/external/AWKandSEDexamples   master  awk '$2 == "brown" {print $1}' colours.txt
+kiwi
+potato
+ ~/external/AWKandSEDexamples   master 
+
+
